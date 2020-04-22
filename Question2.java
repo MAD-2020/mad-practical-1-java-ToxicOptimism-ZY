@@ -24,5 +24,7 @@ public class Question2
     //Display Output
     String roundedBmi = String.format("%.2f", bmi); //For rounding to 2 d.p for Display
     System.out.println("Bmi: " + roundedBmi + "\tHeight: " + height + "\tWeight: " + weight); 
+    
+    in.close(); //To close the data stream because of the resource leak warning in Repl.it
   }
 }
